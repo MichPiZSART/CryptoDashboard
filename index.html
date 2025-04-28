@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Crypto Dashboard Project<span>$</span></h1>
+      </header>
+      <div id="app">
+        <section class="main_el">
+          <div class="leftSide">
+            <button id="getData">Pobierz Dane</button>
+          </div>
+          <div class="rightSide">
+            <button id="1stPage" class="paginBtn">1</button>
+            <button id="2ndPage" class="paginBtn">2</button>
+            <button id="3rdPage" class="paginBtn">3</button>
+            <button id="4thPage" class="paginBtn">4</button>
+            <button id="5thPage" class="paginBtn">5</button>
+          </div>
+        </section>
+        <section class="main_el_table">
+          <table id="dynamicTable">
+            <thead>
+              <tr>
+                <th>Lp</th>
+                <th>Name</th>
+                <th>Symbol</th>
+                <th>$ Price</th>
+                <th>Current Rate</th>
+              </tr>
+            </thead>
+            <tbody id="dynamicTableBody">
+            </tbody>
+          </table>
+        </section>
+      </div>
+      <footer>
+        Copyright &copy Michał Piecyk
+      </footer>
+    </div>
+  </body>
+  <script src="plik.js" type="module"></script>
+</html>
